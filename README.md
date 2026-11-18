@@ -35,3 +35,8 @@ Aplikasi ini dibuat untuk mempelajari navigasi antar halaman (routes) pada Flutt
 
 ## Pertemuan 4
 Aplikasi ini dibuat untuk mempelajari integrasi Flutter dengan REST API (`toko-api` CodeIgniter) menggunakan package `http`, meliputi pembuatan helper koneksi API (`api.dart` dan `api_url.dart`), model data (`RegistrasiModel`, `LoginModel`, `ProdukModel`), lapisan bisnis (`RegistrasiBloc`, `LoginBloc`, `ProdukBloc`), serta antarmuka lengkap untuk Registrasi, Login, Logout, dan operasi CRUD Produk (List Produk, Tambah Produk, Detail Produk, Ubah Produk, dan Hapus Produk).
+
+---
+
+## Pertemuan 5
+Aplikasi ini dikembangkan untuk menambahkan manajemen sesi autentikasi berbasis token menggunakan `shared_preferences` (`user_info.dart`), penanganan error HTTP terstruktur (`app_exception.dart`), pengiriman header `Authorization: Bearer <token>` otomatis beserta method `DELETE` pada helper API (`api.dart`), pengecekan status login otomatis saat aplikasi dibuka di `main.dart`, fitur `LogoutBloc`, serta komponen dialog kustom (`SuccessDialog` dan `WarningDialog`) untuk memberikan umpan balik kepada pengguna pada setiap aksi Registrasi, Login, dan CRUD Produk.
